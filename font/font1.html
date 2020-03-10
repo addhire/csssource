@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      p {
+        font-style: italic;
+        font-weight: 900;
+        font-size: 40px;
+      }
+      div {
+        font-size: 20px;
+        line-height: 1.5; /*px,em,..., 숫자*/
+        font-family: Arial, Helvetica, "Open Sans", "돋움", sans-serif;
+      }
+      .seirf {
+        font-family: serif;
+      }
+      .sans-serif {
+        font-family: sans-serif;
+      }
+      .monospace {
+        font-family: monospace;
+      }
+      .cursive {
+        font-family: cursive;
+      }
+      .total {
+        /*단축속성으로 font 속성값을 부여하는 것이 가능
+        단, font-size, font-family 속성은 무조건 부여해야함
+        */
+        font: italic bold 20px / 1.5 Arial, sans-serif;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--
+        font
+        font-style: 글자의 기울임꼴
+        font-weight: 글자의 두께(100~900,bold,normal(400))
+        font-size: 글자의 크기
+        line-height: 줄높이
+        font-family: 글꼴(글꼴명 나열, 마지막에는 글꼴 계열)
+        글꼴계역: sans-serif(고딕체) / serif(바탕체) / monospace / cursive(필기체)
+    -->
+    <p>Hello!! World!!</p>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut architecto
+      similique consectetur ex voluptas et placeat. Dolor veniam fuga
+      voluptatibus quasi odit, laboriosam doloremque? Nisi mollitia dolore id
+      hic dolorem officia blanditiis voluptate? Quidem sapiente adipisci magni
+      molestiae, blanditiis accusamus tenetur doloremque a quibusdam, quo
+      temporibus aliquid alias deleniti vitae sequi maiores, fuga excepturi
+      illum laborum aliquam natus esse fugit non quisquam? Maiores ex ut, amet,
+      recusandae quas dolore praesentium quasi consequuntur at tenetur earum,
+      cumque quos cum quae eligendi ipsa velit. Repudiandae vitae magnam
+      adipisci aut rem deleniti tenetur. Tempore ex molestias magnam voluptas
+      maxime quia asperiores a perferendis.
+    </div>
+    <p class="serif">Hello World</p>
+    <p class="sans-serif">Hello World</p>
+    <p class="monospace">Hello World</p>
+    <p class="cursive">Hello World</p>
+    <p class="total">Hello World</p>
+  </body>
+</html>

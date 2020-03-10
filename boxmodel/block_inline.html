@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      div {
+        width: auto; /*기본 100%*/
+        height: 100px; /*기본 0*/
+        background: blueviolet;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      span {
+        /*인라인 요소는 위드와 하이트를 가질 수 없다! 무조건 내용이 들어온만큼!!! 잡는다.*/
+        /* width: 200px;
+        height: 200px; */
+        background: red;
+        padding: 20px;
+        margin: 20px;
+        /*인라인은 마진을 줬을때 좌우만 적용됨. 상하가 적용이 안 된다.*/
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--블록 요소           무조건 밑으로!-->
+    <div>
+      <h1>이것은 블록요소입니다.</h1>
+    </div>
+    <div>
+      <h1>이것은 블록요소입니다.</h1>
+    </div>
+    <!--인라인 요소         무조건 옆으로!-->
+    <span>이것은 인라인요소입니다.1</span>
+    <span>이것은 인라인요소입니다.2</span>
+    <span>이것은 인라인요소입니다.3</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+    <span>이것은 인라인요소입니다.4</span>
+  </body>
+</html>

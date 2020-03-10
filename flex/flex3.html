@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .container {
+        display: flex;
+        border: 1px solid;
+        /* justify-content: 주축의 정렬 방법 */
+        /* flex-start(기본값), flex-end, center, space-between, space-around, space-evenly*/
+        justify-content: space-evenly;
+      }
+      .container .box {
+        width: 100px;
+        height: 100px;
+      }
+      .container .box:first-child {
+        background: red;
+      }
+      .container .box:nth-child(2) {
+        background: orange;
+      }
+      .container .box:nth-child(3) {
+        background: green;
+      }
+    </style>
+    <title>한번봄</title>
+  </head>
+  <body>
+    <!--수평으로 아이템 배치: inline-block, float, flex-->
+    <div class="container">
+      <div class="box">flex-item1</div>
+      <div class="box">flex-item2</div>
+      <div class="box">flex-item3</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+      quam temporibus nam aut! Dolores, alias. Blanditiis nam excepturi cumque
+      nisi qui error id. Nemo unde culpa sunt ab! Quaerat, adipisci!
+    </p>
+  </body>
+</html>

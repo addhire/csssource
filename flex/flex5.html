@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      .container {
+        border: 2px solid;
+        height: 600px;
+        display: flex;
+        /* justify-content: space-around; */
+        /* align-content: 교차축의 정렬방식 (박스에 하이트가 걸려 있으면 안됨.)
+          stretch: 기본값. flex-start(교차축의 시작을 기준으로 붙임) flex-end(끝에 붙임), center
+          space-between, space-around
+          
+          align-items: 한 줄 안에서의 정렬방식. align-content값이 stretch일때 작동함.
+          stretch: 기본값. flex-start(교차축의 시작을 기준으로 붙임) flex-end(끝에 붙임),
+          center, baseline
+
+        */
+        /* align-content: stretch; */
+        align-items: baseline;
+        flex-wrap: wrap; /*nowrap 기본. 안내려감. wrap:내려간다 비율대로, wrap-reverse*/
+      }
+      .container .box {
+        /* margin: 0 10px; */
+        /* background: silver; */
+        width: 200px;
+        height: 100px;
+        font-size: 20px;
+        /* 글자 가운데로 오게 하기!!! */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .container .box:first-child {
+        background: red;
+      }
+      .container .box:nth-child(2) {
+        background: orange;
+      }
+      .container .box:nth-child(3) {
+        background: green;
+        /* font-size: 40px; */
+      }
+      .container .box:nth-child(4) {
+        background: blue;
+      }
+      .container .box:nth-child(5) {
+        background: blueviolet;
+      }
+      .container .box:nth-child(6) {
+        background: aqua;
+      }
+      .container .box:last-child {
+        background: yellow;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!--수평으로 아이템 배치: inline-block, float, flex-->
+    <div class="container">
+      <div class="box">flex-item1</div>
+      <div class="box">flex-item2</div>
+      <div class="box">flex-item3</div>
+      <div class="box">flex-item4</div>
+      <div class="box">flex-item5</div>
+      <div class="box">flex-item6</div>
+      <div class="box">flex-item7</div>
+    </div>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem
+      quam temporibus nam aut! Dolores, alias. Blanditiis nam excepturi cumque
+      nisi qui error id. Nemo unde culpa sunt ab! Quaerat, adipisci!
+    </p>
+  </body>
+</html>

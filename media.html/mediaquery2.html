@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Open Sans";
+        background: #ecf0f1;
+      }
+      .container {
+        max-width: 60rem;
+        width: 100%;
+        margin: 2rem auto;
+      }
+      .flexbg {
+        display: flex;
+      }
+      .flexbg main {
+        background: white;
+        padding: 25px;
+        order: 2;
+      }
+      .flexbg .left {
+        background: #3498db;
+        padding: 25px;
+        order: 1;
+      }
+      .flexbg .right {
+        background: #34495e;
+        padding: 25px;
+        order: 3;
+      }
+      @media screen and (max-width: 768px) {
+        .flexbg {
+          flex-wrap: wrap;
+        }
+        .flexbg main {
+          width: 100%;
+          order: 1;
+        }
+        .flexbg .sidebar {
+          width: 50%;
+        }
+        .flexbg .left {
+          order: 2;
+        }
+      }
+      /* @media screen and (max-width: 480px) {
+        .flexbg .sidebar {
+          width: 100%;
+        }
+      } */
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container flexbg">
+      <main>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem eum
+          nihil fugiat debitis. Libero ut voluptate perspiciatis excepturi
+          dolores at quas beatae eos eaque officia aperiam doloremque quam nulla
+          non earum magni ex, delectus laboriosam quo possimus animi molestias
+          quibusdam adipisci iste. Et veritatis, assumenda, sapiente quaerat
+          quod dolor neque esse mollitia fugit eum ducimus nulla placeat sint
+          totam. Repellat quam quibusdam pariatur tenetur voluptatum voluptates
+          beatae, odio hic? Unde iusto ex hic explicabo commodi vero nobis quos
+          dolor beatae aliquam dicta ad id mollitia sit fuga, consequatur eum
+          quisquam est quasi, voluptatibus sapiente ipsum. Maiores eligendi
+          asperiores sunt tenetur.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem eum
+          nihil fugiat debitis. Libero ut voluptate perspiciatis excepturi
+          dolores at quas beatae eos eaque officia aperiam doloremque quam nulla
+          non earum magni ex, delectus laboriosam quo possimus animi molestias
+          quibusdam adipisci iste. Et veritatis, assumenda, sapiente quaerat
+          quod dolor neque esse mollitia fugit eum ducimus nulla placeat sint
+          totam. Repellat quam quibusdam pariatur tenetur voluptatum voluptates
+          beatae, odio hic? Unde iusto ex hic explicabo commodi vero nobis quos
+          dolor beatae aliquam dicta ad id mollitia sit fuga, consequatur eum
+          quisquam est quasi, voluptatibus sapiente ipsum. Maiores eligendi
+          asperiores sunt tenetur.
+        </p>
+      </main>
+      <aside class="sidebar left">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo molestias
+      </aside>
+      <aside class="sidebar right">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sunt
+      </aside>
+    </div>
+  </body>
+</html>
